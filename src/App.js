@@ -1,26 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+
 import './App.css';
+import { Categories } from './pages/Categories';
+import { RandomJokes } from './pages/RandomJokes';
+import { Search } from './pages/Search';
+import { InputField } from './components/InputField';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;
+export const App = () => {
+	return (
+		<BrowserRouter>
+			<InputField />
+			<Switch>
+				<Route path='/' exact>
+					<Categories />
+				</Route>
+				<Route path='/category/:category'>
+					<RandomJokes />
+				</Route>
+				<Route path='/search/:searchValue'>
+					<Search />
+				</Route>
+			</Switch>
+		</BrowserRouter>
+	);
+};
