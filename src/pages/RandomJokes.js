@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import styled from 'styled-components';
 
 //Shows one random joke depending
 
@@ -16,13 +17,30 @@ export const RandomJokes = () => {
 	}, [category]);
 
 	return (
-		<div>
-			<div>
-				<img src={joke.icon_url} alt='Chuck' />
-				<h1>{joke.value}</h1>
-			</div>
-
-			<h1>random</h1>
-		</div>
+		<Main>
+			<JokeSection>
+				<Picture src={joke.icon_url} alt='Chuck' />
+				<Text>- {joke.value}</Text>
+			</JokeSection>
+		</Main>
 	);
 };
+
+const Main = styled.div`
+	display: flex;
+`;
+const JokeSection = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+`;
+
+const Picture = styled.img`
+	width: 20%;
+`;
+
+const Text = styled.h2`
+	font-family: 'Permanent Marker', cursive;
+	padding: 30px;
+`;

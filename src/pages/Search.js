@@ -24,7 +24,6 @@ export const Search = () => {
 					{find.map((item) => (
 						<h1 key={item.id}>{item.value}</h1>
 					))}
-					<h1>Search</h1>
 				</div>
 			)}
 		</>

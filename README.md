@@ -1,3 +1,15 @@
+#
+
+Lern Yearn.
+Use Postman to examen the API.
+Start with displaying all categories.
+Turn the categories into Links to be able to us their value in the Url address, using params.
+Add a input field to find jokes by searching. Use the search value in the Url.
+Hide the search button until the user typed 3 caracters.
+Added failed message if there where no data returned from the search.
+Run "yarn test". Result was 1 failed. I fund that I had missed to add the {} in : import { App } from './App';
+No more test failed.
+
 # Oneflow - FrontEnd Assignment
 
 Create a web-application using React as presented below.
@@ -9,6 +21,7 @@ You can use this boilerplate as the starting point of your project. All of your 
 **Register everything** including your tests/spikes, ideas if you had more time (explain how would you solve things), decisions you've made (and why), the architecture you chose. Add a `COMMENTS.md` or a `HISTORY.md` to show us your thoughts and ideas.
 
 ## The assignment
+
 ![](https://api.chucknorris.io/img/chucknorris_logo_coloured_small.png)
 
 The applicant should design and implement a minimalistic web-application that would let the user browse, search and navigate through [Chuck Norris jokes](https://api.chucknorris.io/) and works within a standard modern web-browser.
