@@ -16,13 +16,18 @@ const Main = styled.div`
 	text-align: center;
 	width: 100%;
 	margin-top: 30px;
+	@media (min-width: 768px) {
+		padding: 50px 70px 60px 70px;
+	}
+	@media (min-width: 1200px) {
+		padding: 70px 100px 100px 100px;
+	}
 `;
 
 const HeadLine = styled.h1`
-	font-family: 'Permanent Marker', cursive;
 	padding: 0 30px 0 30px;
-	margin: 0;
-	font-size: 20px;
+	margin: 3px;
+	font-size: 25px;
 	@media (min-width: 768px) {
 		font-size: 30px;
 	}

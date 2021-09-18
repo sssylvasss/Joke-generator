@@ -44,6 +44,5 @@ const Picture = styled.img`
 `;
 
 const Text = styled.h2`
-	font-family: 'Permanent Marker', cursive;
 	padding: 30px;
 `;

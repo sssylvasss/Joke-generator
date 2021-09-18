@@ -21,7 +21,6 @@ export const Search = () => {
 	return (
 		<Main>
 			<ReturnButton />
-
 			{find.length === 0 ? (
 				<Text>Sorry, no jokes for you. Try again!</Text>
 			) : (
@@ -52,8 +51,6 @@ const JokeSection = styled.div`
 	display: flex;
 `;
 
-const Text = styled.h2`
-	font-family: 'Permanent Marker', cursive;
-`;
+const Text = styled.h2``;
 
 const JokeList = styled.div``;

@@ -1,12 +1,8 @@
-// - https://api.chucknorris.io/jokes/categories
-// - https://api.chucknorris.io/jokes/random?category={category}
-// - https://api.chucknorris.io/jokes/search?query={query}
-
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-///List all categories
+///Lists all categories
 
 export const Categories = () => {
 	const [categories, setCategories] = useState([]);
@@ -19,8 +15,8 @@ export const Categories = () => {
 
 	return (
 		<Main>
-			<Text>Or pick a category</Text>
-			<Wrapper>
+			<Text>Or pick a category:</Text>
+			<TextWrapper>
 				{categories.map((category) => (
 					<TextCell key={category}>
 						<Link to={`/category/${category}`}>
@@ -28,7 +24,7 @@ export const Categories = () => {
 						</Link>
 					</TextCell>
 				))}
-			</Wrapper>
+			</TextWrapper>
 		</Main>
 	);
 };
@@ -46,7 +42,7 @@ const Main = styled.div`
 	}
 `;
 
-const Wrapper = styled.div`
+const TextWrapper = styled.div`
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -55,13 +51,11 @@ const Wrapper = styled.div`
 const CategoryText = styled.h3`
 	font-size: 18px;
 	padding: 0 5px 0 5px;
-	font-family: 'Permanent Marker', cursive;
 `;
 
 const Text = styled.h3`
 	font-size: 18px;
 	margi-bottom: 20px;
-	font-family: 'Permanent Marker', cursive;
 	@media (min-width: 768px) {
 		font-size: 30px;
 	}
