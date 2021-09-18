@@ -32,9 +32,9 @@ export const RandomJokes = () => {
 const Main = styled.div`
 	display: flex;
 `;
+
 const JokeSection = styled.div`
 	display: flex;
-
 	align-items: center;
 	justify-content: center;
 `;

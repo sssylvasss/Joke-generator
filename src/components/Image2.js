@@ -2,11 +2,11 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-export const Image = () => {
+export const Image2 = () => {
 	return (
 		<Main>
 			<Picture
-				src='https://i.pinimg.com/564x/4c/42/0c/4c420cc6fa11f8645717e5decf30bdb5.jpg'
+				src='https://lh3.googleusercontent.com/proxy/3GoAZbJx6EUQxrWCRqJC8E-rRPbULo7N8TimKItbGGBBW6_NGI8iAGPIvxCvpD1ChQa3ZxvdZLQEtqfKDGldbzRyP5_alMraIw'
 				alt='Chuck'
 			/>
 		</Main>
@@ -23,9 +23,9 @@ const Main = styled.div`
 `;
 
 const Picture = styled.img`
-	width: 40%;
+	width: 70%;
+	margin-top: 15px;
 	border-radius: 50%;
-	border: 4px solid #000;
 
 	@media (min-width: 768px) {
 		width: 20%;

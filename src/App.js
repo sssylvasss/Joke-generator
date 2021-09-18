@@ -7,6 +7,7 @@ import { RandomJokes } from './pages/RandomJokes';
 import { Search } from './pages/Search';
 import { InputField } from './components/InputField';
 import { Image } from './components/Image';
+import { Image2 } from './components/Image2';
 import { Text } from './components/Text';
 
 export const App = () => {
@@ -15,18 +16,21 @@ export const App = () => {
 			<BrowserRouter>
 				<Route path='/' exact>
 					<Text />
+					<Image />
+					<InputField />
 				</Route>
-
-				<Image />
-				<InputField />
 				<Switch>
 					<Route path='/' exact>
 						<Categories />
 					</Route>
 					<Route path='/category/:category'>
+						<Image2 />
+						<InputField />
 						<RandomJokes />
 					</Route>
 					<Route path='/search/:searchValue'>
+						<Image2 />
+						<InputField />
 						<Search />
 					</Route>
 				</Switch>
@@ -39,6 +43,8 @@ const Main = styled.div`
 	max-width: 2000px;
 	border: solid 2px #000;
 	margin: 0 auto;
+	height: 100%;
+	min-height: 100vh;
 	background: radial-gradient(
 		circle,
 		rgba(234, 255, 4, 1) 0%,

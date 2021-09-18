@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import styled from 'styled-components';
 
 import { ReturnButton } from '../components/ReturnButton';
 
@@ -18,17 +19,41 @@ export const Search = () => {
 	}, [searchValue]);
 
 	return (
-		<>
+		<Main>
 			<ReturnButton />
+
 			{find.length === 0 ? (
-				<h1>Sorry, no jokes for you. Try again!</h1>
+				<Text>Sorry, no jokes for you. Try again!</Text>
 			) : (
-				<div>
+				<JokeList>
 					{find.map((item) => (
-						<h1 key={item.id}>{item.value}</h1>
+						<Text key={item.id}>
+							<i class='fas fa-hat-cowboy'></i>
+							{item.value}
+						</Text>
 					))}
-				</div>
+				</JokeList>
 			)}
-		</>
+		</Main>
 	);
 };
+
+const Main = styled.div`
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 100%;
+	@media (min-width: 768px) {
+		padding: 0 100px 100px 100px;
+	}
+`;
+
+const JokeSection = styled.div`
+	display: flex;
+`;
+
+const Text = styled.h2`
+	font-family: 'Permanent Marker', cursive;
+`;
+
+const JokeList = styled.div``;

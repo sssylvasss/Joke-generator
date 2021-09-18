@@ -15,12 +15,13 @@ const Main = styled.div`
 	flex-direction: column;
 	text-align: center;
 	width: 100%;
+	margin-top: 30px;
 `;
 
 const HeadLine = styled.h1`
 	font-family: 'Permanent Marker', cursive;
 	padding: 0 30px 0 30px;
-	margin-top: 20;
+	margin: 0;
 	font-size: 20px;
 	@media (min-width: 768px) {
 		font-size: 30px;

@@ -42,7 +42,7 @@ const Main = styled.div`
 	height: 400px;
 	@media (min-width: 768px) {
 		height: 400px;
-		padding: 50px;
+		padding: 0 50px 50px 50px;
 	}
 `;
 
@@ -62,6 +62,9 @@ const Text = styled.h3`
 	font-size: 18px;
 	margi-bottom: 20px;
 	font-family: 'Permanent Marker', cursive;
+	@media (min-width: 768px) {
+		font-size: 30px;
+	}
 `;
 
 const TextCell = styled.div``;
