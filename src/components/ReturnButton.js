@@ -14,7 +14,9 @@ export const ReturnButton = () => {
 };
 
 const Main = styled.div`
+	align-items: center;
+	justify-content: center;
 	display: flex;
-	flex-direction: column;
 	padding: 15px;
+	cursor: pointer;
 `;

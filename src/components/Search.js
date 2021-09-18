@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
 
-import { ReturnButton } from '../components/ReturnButton';
+import { ReturnButton } from './ReturnButton';
 
 //Return all jokes that includes the searched value
 

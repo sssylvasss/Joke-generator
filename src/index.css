@@ -18,14 +18,15 @@ font-family: 'Zilla Slab', serif;
 }
 
 /* Icon, ReturnButton */
-.fas {
+
+.fas{
 	font-size: 35px;
 	margin: 10px;
   cursor: pointer;
 }
 
 .fas:hover {
- color: #FFF;
+  color: #FFF;
   opacity: 0.9;
   transition: 0.3s ease;
 }

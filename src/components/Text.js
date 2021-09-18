@@ -17,10 +17,10 @@ const Main = styled.div`
 	width: 100%;
 	margin-top: 30px;
 	@media (min-width: 768px) {
-		padding: 50px 70px 60px 70px;
+		padding: 30px 70px 30px 70px;
 	}
 	@media (min-width: 1200px) {
-		padding: 70px 100px 100px 100px;
+		padding: 60px 100px 50px 100px;
 	}
 `;
 

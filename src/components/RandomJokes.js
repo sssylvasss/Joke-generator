@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
 
-import { ReturnButton } from '../components/ReturnButton';
+import { ReturnButton } from './ReturnButton';
 
 //Shows one random joke depending
 
@@ -31,6 +31,7 @@ export const RandomJokes = () => {
 
 const Main = styled.div`
 	display: flex;
+	flex-direction: column;
 `;
 
 const JokeSection = styled.div`
@@ -40,7 +41,11 @@ const JokeSection = styled.div`
 `;
 
 const Picture = styled.img`
-	width: 20%;
+	padding-left: 15px;
+	width: 15%;
+	@media (min-width: 768px) {
+		width: 10%;
+	}
 `;
 
 const Text = styled.h2`

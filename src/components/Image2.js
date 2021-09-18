@@ -15,12 +15,10 @@ export const Image2 = () => {
 };
 
 const Main = styled.div`
-	display: flex;
-	justify-content: center;
 	align-items: center;
-	width: 100%;
-	flex-direction: column;
-	padding-top: 10px;
+	justify-content: center;
+	display: flex;
+	padding: 15px;
 `;
 
 const Picture = styled.img`

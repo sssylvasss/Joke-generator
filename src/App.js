@@ -2,36 +2,23 @@ import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import styled from 'styled-components';
 
-import { Categories } from './pages/Categories';
-import { RandomJokes } from './pages/RandomJokes';
-import { Search } from './pages/Search';
-import { InputField } from './components/InputField';
-import { Image } from './components/Image';
-import { Image2 } from './components/Image2';
-import { Text } from './components/Text';
+import { JokesSearch } from './pages/JokesSearch';
+import { JokesByCategory } from './pages/JokesByCategory';
+import { StartPage } from './pages/StartPage';
 
 export const App = () => {
 	return (
 		<Main>
 			<BrowserRouter>
 				<Route path='/' exact>
-					<Text />
-					<Image />
-					<InputField />
+					<StartPage />
 				</Route>
 				<Switch>
-					<Route path='/' exact>
-						<Categories />
-					</Route>
 					<Route path='/category/:category'>
-						<Image2 />
-						<InputField />
-						<RandomJokes />
+						<JokesByCategory />
 					</Route>
 					<Route path='/search/:searchValue'>
-						<Image2 />
-						<InputField />
-						<Search />
+						<JokesSearch />
 					</Route>
 				</Switch>
 			</BrowserRouter>
@@ -52,10 +39,3 @@ const Main = styled.div`
 		rgba(255, 0, 243, 1) 100%
 	);
 `;
-
-// @media (min-width: 768px) {
-// 	padding: 30px 30px 40px 30px;
-// }
-// @media (min-width: 1200px) {
-// 	padding-bottom: 50px;
-// }
