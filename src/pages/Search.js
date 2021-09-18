@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
+import { ReturnButton } from '../components/ReturnButton';
+
 //Return all jokes that includes the searched value
 
 export const Search = () => {
@@ -17,6 +19,7 @@ export const Search = () => {
 
 	return (
 		<>
+			<ReturnButton />
 			{find.length === 0 ? (
 				<h1>Sorry, no jokes for you. Try again!</h1>
 			) : (

@@ -7,11 +7,16 @@ import { RandomJokes } from './pages/RandomJokes';
 import { Search } from './pages/Search';
 import { InputField } from './components/InputField';
 import { Image } from './components/Image';
+import { Text } from './components/Text';
 
 export const App = () => {
 	return (
 		<Main>
 			<BrowserRouter>
+				<Route path='/' exact>
+					<Text />
+				</Route>
+
 				<Image />
 				<InputField />
 				<Switch>
@@ -32,6 +37,8 @@ export const App = () => {
 
 const Main = styled.div`
 	max-width: 2000px;
+	border: solid 2px #000;
+	margin: 0 auto;
 	background: radial-gradient(
 		circle,
 		rgba(234, 255, 4, 1) 0%,
@@ -39,3 +46,10 @@ const Main = styled.div`
 		rgba(255, 0, 243, 1) 100%
 	);
 `;
+
+// @media (min-width: 768px) {
+// 	padding: 30px 30px 40px 30px;
+// }
+// @media (min-width: 1200px) {
+// 	padding-bottom: 50px;
+// }

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
 
+import { ReturnButton } from '../components/ReturnButton';
+
 //Shows one random joke depending
 
 export const RandomJokes = () => {
@@ -18,6 +20,7 @@ export const RandomJokes = () => {
 
 	return (
 		<Main>
+			<ReturnButton />
 			<JokeSection>
 				<Picture src={joke.icon_url} alt='Chuck' />
 				<Text>- {joke.value}</Text>
@@ -31,7 +34,7 @@ const Main = styled.div`
 `;
 const JokeSection = styled.div`
 	display: flex;
-	flex-direction: column;
+
 	align-items: center;
 	justify-content: center;
 `;

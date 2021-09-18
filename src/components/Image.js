@@ -5,12 +5,10 @@ import styled from 'styled-components';
 export const Image = () => {
 	return (
 		<Main>
-			<HeadLine>Hey Folks! It's Your Lucky Day!</HeadLine>
-			<HeadLine>Chuck Norris is here to tell You a joke!</HeadLine>
-			{/* <Picture
-				src='https://media.gq.com/photos/5583008609f0bee56440d085/master/w_1600,c_limit/news-politics-blogs-death-race-chucknorris1450.jpg
-'
-			/> */}
+			<Picture
+				src='https://media.gq.com/photos/5583008609f0bee56440d085/master/w_1600,c_limit/news-politics-blogs-death-race-chucknorris1450.jpg'
+				alt='Chuck'
+			/>
 		</Main>
 	);
 };
@@ -24,13 +22,11 @@ const Main = styled.div`
 	padding-top: 10px;
 `;
 
-const HeadLine = styled.h1`
-	font-family: 'Permanent Marker', cursive;
-	padding: 0 30px 0 30px;
-	margin-top: 0;
-`;
+const Picture = styled.img`
+	width: 35%;
+	border-radius: 50px;
 
-// const Picture = styled.img`
-// 	width: 30%;
-// 	border-radius: 50px;
-// `;
+	@media (min-width: 768px) {
+		width: 20%;
+	}
+`;

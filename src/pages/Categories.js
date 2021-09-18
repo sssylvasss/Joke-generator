@@ -20,40 +20,48 @@ export const Categories = () => {
 	return (
 		<Main>
 			<Text>Or pick a category</Text>
-			<CategorySection>
+			<Wrapper>
 				{categories.map((category) => (
-					<CategoryTextSection key={category}>
+					<TextCell key={category}>
 						<Link to={`/category/${category}`}>
 							<CategoryText>{category}</CategoryText>
 						</Link>
-					</CategoryTextSection>
+					</TextCell>
 				))}
-			</CategorySection>
+			</Wrapper>
 		</Main>
 	);
 };
 
 const Main = styled.div`
 	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	padding: 0 30px 40px 30px;
 	flex-direction: column;
+	height: 400px;
+	@media (min-width: 768px) {
+		height: 400px;
+		padding: 50px;
+	}
 `;
+
+const Wrapper = styled.div`
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+`;
+
 const CategoryText = styled.h3`
 	font-size: 18px;
-	padding: 5px;
+	padding: 0 5px 0 5px;
 	font-family: 'Permanent Marker', cursive;
 `;
+
 const Text = styled.h3`
 	font-size: 18px;
-	padding: 5px;
-	width: 100%;
-	text-align: center;
+	margi-bottom: 20px;
 	font-family: 'Permanent Marker', cursive;
 `;
-const CategoryTextSection = styled.div`
-	display: flex;
-	flex-direction: row;
-`;
-const CategorySection = styled.div`
-	display: flex;
-	flex-direction: row;
-`;
+
+const TextCell = styled.div``;
