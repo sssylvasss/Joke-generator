@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-// Image on home page
+// Image on start page
 
 export const Image = () => {
 	return (
