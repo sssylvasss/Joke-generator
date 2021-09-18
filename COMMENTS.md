@@ -57,4 +57,8 @@ No errors or warnings.
 
 Did some more changes to the styling so it looked better on Safari and Crome that I did not see when in DevTools.
 
+If I had more time I would add some small animation or/and maybe some sounds to make the page alittle more playfull.
+
+I would also add a loader.
+
 ---
