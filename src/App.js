@@ -10,10 +10,10 @@ export const App = () => {
 	return (
 		<Main>
 			<BrowserRouter>
-				<Route path='/' exact>
-					<StartPage />
-				</Route>
 				<Switch>
+					<Route path='/' exact>
+						<StartPage />
+					</Route>
 					<Route path='/category/:category'>
 						<JokesByCategory />
 					</Route>
