@@ -24,7 +24,7 @@ const Main = styled.div`
 `;
 
 const Picture = styled.img`
-	width: 40%;
+	width: 45%;
 	border-radius: 50%;
 	border: 4px solid #000;
 

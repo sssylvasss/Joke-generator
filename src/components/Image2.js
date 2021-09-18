@@ -7,7 +7,7 @@ export const Image2 = () => {
 	return (
 		<Main>
 			<Picture
-				src='https://lh3.googleusercontent.com/proxy/3GoAZbJx6EUQxrWCRqJC8E-rRPbULo7N8TimKItbGGBBW6_NGI8iAGPIvxCvpD1ChQa3ZxvdZLQEtqfKDGldbzRyP5_alMraIw'
+				src='https://www.pngkey.com/png/full/110-1104326_do-you-think-you-can-master-chuck-norris.png'
 				alt='Chuck'
 			/>
 		</Main>
@@ -22,11 +22,11 @@ const Main = styled.div`
 `;
 
 const Picture = styled.img`
-	width: 70%;
+	width: 40%;
 	margin-top: 15px;
 	border-radius: 50%;
-
+	background: #fff;
 	@media (min-width: 768px) {
-		width: 20%;
+		width: 15%;
 	}
 `;
