@@ -47,10 +47,6 @@ const Main = styled.div`
 	}
 `;
 
-const JokeSection = styled.div`
-	display: flex;
-`;
-
 const Text = styled.h2``;
 
 const JokeList = styled.div``;
