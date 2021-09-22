@@ -24,7 +24,7 @@ I used the category's value from the fetch in Categories.js to do a new fetch, f
 ---
 
 Search.js:
-Add an input field to find jokes by search. Use the search value to GET the fetch.
+Add an input field to find jokes by search. Use the search value to get the fetch.
 
 Hide the search button until the user has typed 3 characters.
 
