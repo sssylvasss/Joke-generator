@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+// import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
 
 import { ReturnButton } from './ReturnButton';
 
 //Shows one random joke depending
 
-export const RandomJokes = () => {
-	const { category } = useParams();
+export const RandomJokes = ({ category }) => {
+	// const { category } = useParams();
 	const [joke, setJoke] = useState({});
 
 	useEffect(() => {
@@ -15,7 +15,9 @@ export const RandomJokes = () => {
 			.then((res) => res.json())
 			.then((json) => {
 				setJoke(json);
-			});
+			})
+			//added catch error
+			.catch((err) => console.error(err));
 	}, [category]);
 
 	return (

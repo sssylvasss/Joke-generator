@@ -7,7 +7,7 @@ export const ReturnButton = () => {
 	return (
 		<Main>
 			<Link to='/'>
-				<i class='fas fa-arrow-left'></i>
+				<i className='fas fa-arrow-left'></i>
 			</Link>
 		</Main>
 	);

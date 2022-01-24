@@ -15,7 +15,10 @@ export const Search = () => {
 			.then((res) => res.json())
 			.then((json) => {
 				setFind(json.result);
-			});
+			})
+
+			//added catch error
+			.catch((err) => console.error(err));
 	}, [searchValue]);
 
 	return (
